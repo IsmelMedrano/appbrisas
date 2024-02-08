@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Casillas Numeradas</title>
+      <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+   </head>
+   <body>
+      <div class="main-container">
+         <!-- Titulo -->
+         <header class="titulo">
+            <h2>Control de muertos (trastes sucios)</h2>
+         </header>
+
+         <!-- Modal de pedido -->
+
+         <div id="modal-pedido" class="modal">
+            <div class="modal-content">
+               <div class="close-pedido"><span id="x-pedido">x</span></div>
+
+               <p class="modal-title">Registro de pedido</p>
+
+               <form class="form" id="form-pedido">
+                  <div class="fields-container">
+                     <label for="nombre-pedido" class="form-label"
+                        >Nombre completo:</label
+                     >
+                     <input
+                        type="text"
+                        id="nombre-pedido"
+                        name="habitacion"
+                        placeholder="Nombre completo"
+                        required
+                     />
+
+                     <select name="nombres" id="nombres-pedido">
+                        <option value="JULIAN CHAMU GARCIA ">JULIAN CHAMU GARCIA </option>
+                        <option value="DULCE MARLENE LOPEZ ARREDONDO">DULCE MARLENE LOPEZ ARREDONDO</option>
+                        <option value="JOSE ARTURO ASTUDILLO VILLA">JOSE ARTURO ASTUDILLO VILLA</option>
+                        <option value="REYNA OROZCO AQUINO">REYNA OROZCO AQUINO</option>
+                        <option value="CECILIA MORALES FLORES">CECILIA MORALES FLORES</option>
+                        <option value="DAVID MARTINEZ NAJERA">DAVID MARTINEZ NAJERA</option>
+                        <option value="BRISA CELESTE LOPEZ VILCHIS">BRISA CELESTE LOPEZ VILCHIS</option>
+                        <option value="KENIA KARINA JUAREZ PAVON">KENIA KARINA JUAREZ PAVON</option>
+                        <option value="CRESCENCIO PACHECO LANDIN">CRESCENCIO PACHECO LANDIN</option>
+                        <option value="GABRIEL SANDOVAL ZAMORA">  GABRIEL SANDOVAL ZAMORA</option>
+                        <option value="JUAN JOSE ARIAS ORIHUELA">JUAN JOSE ARIAS ORIHUELA</option>
+                        <option value="VICTOR MANUEL MARQUEZ NAVA">VICTOR MANUEL MARQUEZ NAVA</option>
+                        <option value="GIOVANY GALLARDO MATILDE">GIOVANY GALLARDO MATILDE</option>
+                        <option value="JANSEN AGUSTIN VERGARA BETANCOURT">JANSEN AGUSTIN VERGARA BETANCOURT</option>
+                        <option value="ALAN RICARDO HERNANDEZ OLIVA">ALAN RICARDO HERNANDEZ OLIVA</option>
+                        <option value="EDUARDO CAMACHO ROMAN">EDUARDO CAMACHO ROMAN</option>
+                        <option value="MARTIN ROMAN GARCIA">MARTIN ROMAN GARCIA</option>
+                        <option value="FERNANDO JUAREZ HUAXCO">FERNANDO JUAREZ HUAXCO</option>
+                        <option value="BRIAN SERRANO MALDONADO">BRIAN SERRANO MALDONADO</option>
+                        <option value="TOMAS HERNANDEZ RAMIREZ">TOMAS HERNANDEZ RAMIREZ</option>
+                        <option value="RICARDO  SILVA JAIMEZ">RICARDO  SILVA JAIMEZ</option>
+                        <option value="ALAN ERNESTO CALIXTO PERALTA">ALAN ERNESTO CALIXTO PERALTA</option>
+                        <option value="JORGE ABRAHAM ALBERTO ARIZMENDI">JORGE ABRAHAM ALBERTO ARIZMENDI</option>
+                        <option value="usuario 25"></option>
+                     </select>
+
+                     <label for="habitacion-pedido" class="form-label"
+                        >Número de Habitación:</label
+                     >
+                     <input
+                        type="number"
+                        id="habitacion-pedido"
+                        name="habitacion"
+                        placeholder="Número de Habitación"
+                        required
+                     />
+
+                     <label for="dia-pedido" class="form-label">Día:</label>
+                     <input type="date" id="dia-pedido" name="dia" required />
+
+                     <label for="hora-pedido" class="form-label">Hora:</label>
+                     <input type="time" id="hora-pedido" name="hora" required />
+
+                     <label for="folio-pedido" class="form-label">Folio:</label>
+                     <input
+                        type="text"
+                        id="folio-pedido"
+                        name="folio"
+                        required
+                     />
+                  </div>
+                  <button class="button" id="registrar-pedido">
+                     Registrar
+                  </button>
+               </form>
+            </div>
+         </div>
+
+         <!-- Modal de atencion -->
+
+         <div id="modal-atencion" class="modal">
+            <div class="modal-content">
+               <div class="close-atencion"><span id="x-atencion">x</span></div>
+
+               <p class="modal-title">Registro de atencion</p>
+
+               <form class="form" id="form-atencion">
+                  <div class="fields-container">
+                     <label for="nombre-atencion" class="form-label"
+                        >Nombre completo:</label
+                     >
+                     <input
+                        type="text"
+                        id="nombre-atencion"
+                        name="habitacion"
+                        placeholder="Nombre completo"
+                        required
+                     />
+
+                     <select name="nombres" id="nombres-atencion">
+                        <option value="JULIAN CHAMU GARCIA ">JULIAN CHAMU GARCIA </option>
+                        <option value="DULCE MARLENE LOPEZ ARREDONDO">DULCE MARLENE LOPEZ ARREDONDO</option>
+                        <option value="JOSE ARTURO ASTUDILLO VILLA">JOSE ARTURO ASTUDILLO VILLA</option>
+                        <option value="REYNA OROZCO AQUINO">REYNA OROZCO AQUINO</option>
+                        <option value="CECILIA MORALES FLORES">CECILIA MORALES FLORES</option>
+                        <option value="DAVID MARTINEZ NAJERA">DAVID MARTINEZ NAJERA</option>
+                        <option value="BRISA CELESTE LOPEZ VILCHIS">BRISA CELESTE LOPEZ VILCHIS</option>
+                        <option value="KENIA KARINA JUAREZ PAVON">KENIA KARINA JUAREZ PAVON</option>
+                        <option value="CRESCENCIO PACHECO LANDIN">CRESCENCIO PACHECO LANDIN</option>
+                        <option value="GABRIEL SANDOVAL ZAMORA">GABRIEL SANDOVAL ZAMORA</option>
+                        <option value="JUAN JOSE ARIAS ORIHUELA">JUAN JOSE ARIAS ORIHUELA</option>
+                        <option value="VICTOR MANUEL MARQUEZ NAVA">VICTOR MANUEL MARQUEZ NAVA</option>
+                        <option value="GIOVANY GALLARDO MATILDE">GIOVANY GALLARDO MATILDE</option>
+                        <option value="JANSEN AGUSTIN VERGARA BETANCOURT">JANSEN AGUSTIN VERGARA BETANCOURT</option>
+                        <option value="ALAN RICARDO HERNANDEZ OLIVA">ALAN RICARDO HERNANDEZ OLIVA</option>
+                        <option value="EDUARDO CAMACHO ROMAN">EDUARDO CAMACHO ROMAN</option>
+                        <option value="MARTIN ROMAN GARCIA">MARTIN ROMAN GARCIA</option>
+                        <option value="FERNANDO JUAREZ HUAXCO">FERNANDO JUAREZ HUAXCO</option>
+                        <option value="BRIAN SERRANO MALDONADO">BRIAN SERRANO MALDONADO</option>
+                        <option value="TOMAS HERNANDEZ RAMIREZ">TOMAS HERNANDEZ RAMIREZ</option>
+                        <option value="RICARDO  SILVA JAIMEZ">RICARDO  SILVA JAIMEZ</option>
+                        <option value="ALAN ERNESTO CALIXTO PERALTA">ALAN ERNESTO CALIXTO PERALTA</option>
+                        <option value="JORGE ABRAHAM ALBERTO ARIZMENDI">JORGE ABRAHAM ALBERTO ARIZMENDI</option>
+                        <option value="usuario 25"></option>
+                     </select>
+
+                     <label for="habitacion-atencion" class="form-label"
+                        >Número de Habitación:</label
+                     >
+                     <input
+                        type="number"
+                        id="habitacion-atencion"
+                        name="habitacion"
+                        placeholder="Número de Habitación"
+                        required
+                     />
+
+                     <label for="dia" class="form-label">Día:</label>
+                     <input type="date" id="dia-atencion" name="dia" required />
+
+                     <label for="hora" class="form-label">Hora:</label>
+                     <input
+                        type="time"
+                        id="hora-atencion"
+                        name="hora"
+                        required
+                     />
+
+                     <!-- <label for="folio-atencion" class="form-label"
+                        >Folio:</label
+                     >
+                     <input
+                        type="text"
+                        id="folio-atencion"
+                        name="folio"
+                        required
+                     /> -->
+                  </div>
+                  <button class="button" id="registrar-atencion">
+                     Registrar
+                  </button>
+               </form>
+            </div>
+         </div>
+
+         <!-- Habitaciones en servicio -->
+
+         <section class="section-container">
+            <p class="section-title">En servicio</p>
+            <div class="list-habitaciones-container">
+               <div class="list-en-servicio" id="list-en-servicio"></div>
+            </div>
+         </section>
+
+         <!-- Habitaciones disponibles -->
+
+         <section class="section-container">
+            <p class="section-title">Disponibles</p>
+            <div class="list-habitaciones-container">
+               <div class="list-disponibles" id="list-disponibles"></div>
+            </div>
+         </section>
+      </div>
+      <script src="../assets/js/jquery.min.js"></script>
+      <script type="module" src="../assets/js/control_de_muertos.js"></script>
+      <script src="../assets/js/verificar_sesion_usuarios.js"></script>
+   </body>
+</html>
+ 

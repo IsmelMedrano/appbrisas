@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Registro de Atención</title>
+      <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+   </head>
+   <body>
+      <div class="main-container">
+         <h1>Registro de Atención</h1>
+
+         <div class="form-container">
+            <form class="form" action="#" method="post">
+               <div>
+                  <label for="nombre">Nombre Completo:</label>
+                  <input
+                     type="text"
+                     id="nombre"
+                     name="nombre"
+                     placeholder="Nombre Completo"
+                     required
+                  />
+
+                  <label for="dia">Día:</label>
+                  <input type="date" id="dia" name="dia" required />
+
+                  <label for="hora">Hora:</label>
+                  <input type="time" id="hora" name="hora" required />
+
+                  <label for="habitacion">Número de Habitación:</label>
+                  <input
+                     type="number"
+                     id="habitacion"
+                     name="habitacion"
+                     placeholder="Número de Habitación"
+                     required
+                  />
+               </div>
+
+               <button class="button ceneterButton" id="registrar-btn">
+                  Registrar
+               </button>
+            </form>
+         </div>
+      </div>
+
+      <script src="../assets/js/jquery.min.js"></script>
+      <script src="../assets/js/verificar_sesion_usuarios.js"></script>
+   </body>
+</html>
